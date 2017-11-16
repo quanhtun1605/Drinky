@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="English(United States)"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginTop="36dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:id="@+id/MainAct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_marginTop="76dp"
+            android:layout_width="144dp"
+            android:layout_height="144dp" />
+
+        <EditText
+            android:id="@+id/edt_user"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="252dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape"
+            android:hint="@string/edt_login"
+            android:textColor="@color/white"
+            android:paddingLeft="40dp"
+            android:textColorHint="#9c9898"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="265dp"
+            android:tint="#ffffff"
+            android:src="@drawable/usericon" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/edt_pass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="312dp"
+            android:background="@drawable/shape"
+            android:hint="@string/edt_pass"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:textColor="@color/white"
+            android:textColorHint="#9c9898"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="327dp"
+            android:tint="#ffffff"
+            android:src="@drawable/passwordicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="432dp"
+            android:gravity="center_horizontal"
+            android:text="Hoặc đăng nhập bằng tài khoản của bạn"
+            android:textColor="#dacdcd"/>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="372dp"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tv_forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="562dp"
+            android:text="Quên mật khẩu?"
+            android:textColor="#9194b3" />
+
+        <TextView
+            android:id="@+id/btnLoginFb"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="462dp"
+            android:background="#3b5998"
+            android:gravity="center"
+            android:text="FaceBook"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="467dp"
+            android:src="@drawable/ic_login_fb" />
+
+        <TextView
+            android:id="@+id/btnLoginGG"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="512dp"
+            android:background="#D44034"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="517dp"
+            android:src="@drawable/ic_login_google_plus" />
+
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="602dp"
+            android:gravity="center"
+            android:text="Đăng ký"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

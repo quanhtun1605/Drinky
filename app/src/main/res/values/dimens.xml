@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="name_app_top">100dp</dimen>
+    <dimen name="name_text_size">48sp</dimen>
+    <dimen name="size_nav_image">24dp</dimen>
+    <dimen name="margin_nav_image">4dp</dimen>
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.minhd.drinky.Activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="28sp"
+            tools:targetApi="jelly_bean" />
+
+        <ImageView
+            android:id="@+id/imv_search"
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="324dp"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/search512"
+            android:tint="@color/black" />
+
+        <com.example.minhd.drinky.CircleRefreshLayout.CircleRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="528dp"
+            android:layout_below="@id/imv_search"
+            android:layout_marginTop="16dp"
+            app:AniBackColor="#ff8b90af"
+            app:AniForeColor="#ffffffff"
+            app:CircleSmaller="6"
+            tools:context="com.example.minhd.demoalltyperecleview.LinearFragment">
+
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="533dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/_tviewNgon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:text="Ngon"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <LinearLayout
+                            android:id="@+id/_linearLayoutNgon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/_viewPagerNgon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#000000"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/_tviewKM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Khuyến Mại"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <LinearLayout
+                            android:id="@+id/_linearLayoutKM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/_viewPagerKM"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#000000"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/_tviewLa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Lạ"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <LinearLayout
+                            android:id="@+id/_linearLayoutLa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/_viewPagerLa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#000000"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </com.example.minhd.drinky.CircleRefreshLayout.CircleRefreshLayout>
+
+
+
+    </RelativeLayout>
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="-42dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs_color_changing"
+        app:bb_behavior="shifting|underNavbar" />
+
+</RelativeLayout>
